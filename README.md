@@ -4,7 +4,7 @@
 
 ### **Crypto Options Analysis Platform**
 
-[![Status](https://img.shields.io/badge/status-active-success)](https://github.com/yourusername/oi-system)
+[![Status](https://img.shields.io/badge/status-active-success)](https://github.com/b9b4ymiN/oi_system)
 [![Node](https://img.shields.io/badge/Node.js-20+-green.svg)](https://nodejs.org)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.3-blue.svg)](https://www.typescriptlang.org)
 [![License](https://img.shields.io/badge/license-MIT-purple.svg)](LICENSE)
@@ -42,7 +42,7 @@
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/oi-system.git
+git clone https://github.com/b9b4ymiN/oi_system.git
 cd oiSystem
 
 # Install dependencies
@@ -300,7 +300,7 @@ This project is optimized for Oracle Cloud's **Always Free** tier:
 
 # 2. SSH into Backend VM
 ssh oracle@backend-vm-ip
-git clone https://github.com/yourusername/oi-system.git
+git clone https://github.com/b9b4ymiN/oi_system.git
 cd oiSystem
 cp .env .env.production
 # Edit .env.production with your credentials
@@ -308,7 +308,7 @@ docker-compose up -d backend
 
 # 3. SSH into Frontend VM
 ssh oracle@frontend-vm-ip
-git clone https://github.com/yourusername/oi-system.git
+git clone https://github.com/b9b4ymiN/oi_system.git
 cd oiSystem
 cp .env.local .env.production
 # Edit .env.production with your credentials
