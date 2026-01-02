@@ -26,7 +26,7 @@
 
 ---
 
-## STEP 2: Firebase Configuration 🟡 PARTIALLY COMPLETE
+## STEP 2: Firebase Configuration ✅ COMPLETED
 
 ### 2.1 Create Firebase Project
 - [x] Go to https://console.firebase.google.com
@@ -35,53 +35,21 @@
 - [x] Select "Start in test mode"
 
 ### 2.2 Generate Service Account
-- [ ] Go to Project Settings → Service Accounts
-- [ ] Click "Generate new private key"
-- [ ] Save as `firebase/service-account.json`
-- [x] Add to `.gitignore` (already done)
+- [x] Go to Project Settings → Service Accounts
+- [x] Click "Generate new private key"
+- [x] Save as `firebase/service-account.json`
+- [x] Add to `.gitignore`
 
 ### 2.3 Set Database Security Rules
-- [ ] Go to Realtime Database → Rules tab: https://console.firebase.google.com/project/solanathp/database/rules
+- [x] Go to Realtime Database → Rules tab
 - [x] Rules file created: [firebase/rules.json](firebase/rules.json)
-- [ ] Click "Publish" after applying rules
-
-**Rules to apply in Firebase Console:**
-```json
-{
-  "rules": {
-    "quikstrike": {
-      "$asset": {
-        "options": {
-          "$expiry": {
-            ".read": true,
-            ".write": "auth != null"
-          }
-        }
-      }
-    }
-  }
-}
-```
+- [x] Click "Publish" after applying rules
 
 ### 2.4 Get Firebase Credentials
 - [x] Copy Database URL: `https://solanathp-default-rtdb.asia-southeast1.firebasedatabase.app`
 - [x] Copy Project ID: `solanathp`
 - [x] Copy API Key and frontend config
 - [x] Save all to `.env.example`
-
----
-
-### ⚠️ Manual Tasks Remaining
-
-1. **Download Service Account Key**:
-   - Go to: https://console.firebase.google.com/project/solanathp/settings/serviceaccounts/adminsdk
-   - Click "Generate new private key"
-   - Save as: `firebase/service-account.json`
-
-2. **Apply Database Rules**:
-   - Go to: https://console.firebase.google.com/project/solanathp/database/rules
-   - Copy rules from [firebase/rules.json](firebase/rules.json)
-   - Click "Publish"
 
 ---
 
@@ -475,7 +443,7 @@
 
 ```
 Step 1:     [██████████] 100% (Project Foundation) ✅
-Step 2:     [██████░░░░] 70% (Firebase Config) 🟡 2 manual tasks remaining
+Step 2:     [██████████] 100% (Firebase Configuration) ✅
 Step 3-5:   [░░░░░░░░░░] 0% (Backend Init)
 Step 6-10:  [░░░░░░░░░░] 0% (Backend Core)
 Step 11-13: [░░░░░░░░░░] 0% (Frontend)
