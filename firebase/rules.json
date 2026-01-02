@@ -1,0 +1,14 @@
+{
+  "rules": {
+    "quikstrike": {
+      "$asset": {
+        "options": {
+          "$expiry": {
+            ".read": true,
+            ".write": "auth != null && auth.token.admin === true"
+          }
+        }
+      }
+    }
+  }
+}
