@@ -8,7 +8,8 @@
     "dev": "node --loader ts-node/esm src/index.ts",
     "build": "tsc",
     "start": "node dist/index.js",
-    "type-check": "tsc --noEmit"
+    "type-check": "tsc --noEmit",
+    "test:firebase": "node --loader ts-node/esm src/scripts/test-firebase.ts"
   },
   "keywords": ["crypto", "options", "binance", "bybit", "firebase"],
   "author": "",
